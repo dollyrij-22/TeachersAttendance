@@ -17,7 +17,7 @@ public class Splash extends AppCompatActivity {
             public void run() {
                 try{
                     sleep(3000);
-                    Intent startMainScreen = new Intent(getApplicationContext(),MainActivity.class);
+                    Intent startMainScreen = new Intent(getApplicationContext(),teachers_login.class);
                     startActivity(startMainScreen);
                     finish();
                 }

@@ -65,7 +65,6 @@ public class teachers_login extends AppCompatActivity {
             String password = params[1];
             String data = "";
             int tmp;
-
             try {
                 URL url = new URL("http://attendance-dr22libraryapp.rhcloud.com/login.php");
                 String urlParams = "username=" + name + "&password=" + password;
@@ -94,7 +93,7 @@ public class teachers_login extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(String s) {
+        protected void onPostExecute(String s){
             String err = null;
             try {
                 JSONObject root = new JSONObject(s);
