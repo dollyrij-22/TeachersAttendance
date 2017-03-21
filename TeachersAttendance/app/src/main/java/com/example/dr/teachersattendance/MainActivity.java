@@ -130,7 +130,6 @@ public class MainActivity extends AppCompatActivity  {
                         bw.flush();
                         bw.close();
                         os.close();
-
                         InputStream is = httpURLConnection.getInputStream();
                         while((tmp=is.read())!=-1){
                             data+= (char)tmp;
